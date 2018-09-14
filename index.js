@@ -3,7 +3,7 @@ const same = require('./frequencyCounter');
 const validAnagram = require('./isAnagram');
 const countUniqueValues = require('./countUniqueValues');
 const areThereDuplicates = require('./areThereDuplicates');
-const threeSum = require('./threeSum');
+const threeSumBruteForce = require('./threeSumBruteForce');
 const minSubArrayLen = require('./minSubArrayLen');
 const findLongestSubstring = require('./findLongestSubstring');
 
