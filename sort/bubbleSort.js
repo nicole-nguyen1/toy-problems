@@ -1,11 +1,7 @@
 //big O time complexity is worst/avg O(n^2) but for nearly sorted, best case is O(n)
 //space complexity is O(1) due to the temp variable and we aren't making another array
 
-const swap =  (arr, idx1, idx2) => {
-  var temp = arr[idx1];
-  arr[idx1] = arr[idx2];
-  arr[idx2] = temp;
-}
+const swap = require('../helpers/swap');
 
 const bubbleSort = (arr) => {
   //the reason we start backwards is because when the largest values
