@@ -6,6 +6,7 @@ const areThereDuplicates = require('./areThereDuplicates');
 const threeSumBruteForce = require('./threeSumBruteForce');
 const minSubArrayLen = require('./minSubArrayLen');
 const findLongestSubstring = require('./findLongestSubstring');
+const bubbleSort = require('./bubbleSort');
 
 //twoSum([1,2,3,4,6,7], 9);
 
@@ -23,4 +24,6 @@ const findLongestSubstring = require('./findLongestSubstring');
 
 //minSubArrayLen([1,4,16,22,5,7,8,9,10], 55);
 
-findLongestSubstring('bbbbbb');
+// findLongestSubstring('bbbbbb');
+
+bubbleSort([34, 12, 5, 4, 15, 15, 2, 8]);
