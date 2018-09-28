@@ -95,7 +95,7 @@ class DoublyLinkedList {
 
   set(index, val) {
     var foundNode = this.get(index);
-    if (foundNode != null) {
+    if (foundNode !== null) {
       foundNode.val = val;
       return true;
     }
@@ -133,6 +133,26 @@ class DoublyLinkedList {
       this.length--;
       return removed;
     }
+  }
+
+  reverse() {
+    let head = this.head;
+    let current = this.head;
+    let temp;
+
+    while (current) {
+      temp = current.next;
+      current.next = current.prev;
+      current.prev = temp;
+
+      if (!temp) {
+        this.head = current;
+      }
+
+      current = temp;
+    }
+
+    return this;
   }
 }
 
